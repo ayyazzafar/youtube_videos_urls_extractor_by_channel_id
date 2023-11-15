@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
 import subprocess
 import shlex
+from flask_cors import CORS  # Import the CORS module
 
 app = Flask(__name__)
+CORS(app)  # This will enable CORS for all routes
 
 
 @app.route('/get_youtube_urls', methods=['GET'])
