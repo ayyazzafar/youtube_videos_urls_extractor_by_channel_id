@@ -73,7 +73,7 @@ resource "google_cloud_run_service" "service" {
   depends_on = [
     google_project_service.enabled_service
   ]
-  name     = "youtube_videos_urls_extractor_by_channel_id"
+  name     = "youtube-videos-urls-extractor-by-channel-id"
   location = var.region
 
   autogenerate_revision_name = true
