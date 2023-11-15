@@ -7,10 +7,6 @@ variable "region" {
   description = "GCP region"
   type        = string
 }
-variable "namespace" {
-  description = "The namespace for resource naming"
-  type        = string
-}
 
 variable "g_keys_json" {
   type = string
