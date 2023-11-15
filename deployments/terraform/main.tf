@@ -37,7 +37,7 @@ resource "google_cloudbuild_trigger" "trigger" {
     step {
       name = "gcr.io/cloud-builders/docker"
       args = [
-        "build", "-t", local.image, ".", "-f", "Dockerfile"
+        "build", "-t", local.image, ".", "-f", "deployments/terraform/Dockerfile"
       ]
     }
     step {
